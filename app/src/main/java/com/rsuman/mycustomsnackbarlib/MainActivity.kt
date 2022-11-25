@@ -2,19 +2,18 @@ package com.rsuman.mycustomsnackbarlib
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.res.ResourcesCompat
 import com.rsuman.customsnackbarlib.CustomSnackBar
 import com.rsuman.customsnackbarlib.SnackBarType
 import com.rsuman.mycustomsnackbarlib.databinding.ActivityMainBinding
-import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
-@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private var _binding : ActivityMainBinding? = null
     private val binding get() = _binding!!
-    @Inject
-    lateinit var customSnackBar: CustomSnackBar
+    private val customSnackBar : CustomSnackBar by lazy {
+        CustomSnackBar(this, ResourcesCompat.getFont(applicationContext, R.font.custom_font))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
