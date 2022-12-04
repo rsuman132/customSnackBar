@@ -19,16 +19,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.showSnackBarBtn.setOnClickListener {
-            customSnackBar.showSnackBar(
-                parentView = binding.root,
-                snackType = SnackBarType.INFO,
-                title = "Oh Yes!!, Snackbar Works",
-                desc = "Customize snackbar successfully implemented. You can use it in future projects",
-                onDismissListener = {
+        binding.apply {
+            showSnackBarBtn1.setOnClickListener {
+                customSnackBar.showSnackBarStyleOne(
+                    parentView = binding.root,
+                    snackType = SnackBarType.ERROR,
+                    title = "Oh Yes!!, Snackbar1 Works",
+                    desc = "Customize snackbar successfully implemented. You can use it in future projects",
+                    onDismissListener = {
 
-                }
-            )
+                    }
+                )
+            }
+            showSnackBarBtn2.setOnClickListener {
+                customSnackBar.showSnackBarStyleTwo(
+                    parentView = binding.root,
+                    snackType = SnackBarType.ERROR,
+                    title = "Oh Yes!!, Snackbar1 Works",
+                    desc = "Customize snackbar successfully implemented. You can use it in future projects",
+                    onDismissListener = {
+
+                    }
+                )
+            }
         }
     }
 

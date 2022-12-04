@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/custom_snackbar_layout_two.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/snack_bar_style_two.xml" value="0.2953125" />
+        <entry key="customsnackbarlib/src/main/res/drawable/ic_lib_cancel.xml" value="0.1485" />
         <entry key="customsnackbarlib/src/main/res/drawable/ic_lib_clear.xml" value="0.151" />
-        <entry key="customsnackbarlib/src/main/res/layout/custom_snackbar_layout.xml" value="0.25" />
+        <entry key="customsnackbarlib/src/main/res/layout/custom_snackbar_layout.xml" value="0.165" />
+        <entry key="customsnackbarlib/src/main/res/layout/custom_snackbar_layout_two.xml" value="0.25" />
       </map>
     </option>
   </component>
